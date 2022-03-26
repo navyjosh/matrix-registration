@@ -1,4 +1,4 @@
-{ pkgs ? import <nixpkgs> {}, tag ? "latest" }:
+{ pkgs ? import <nixpkgs> {}, tag ? "v0.9.2.dev2-josh" }:
 
 let
   matrix-registration = import ./shell.nix { inherit pkgs; };
