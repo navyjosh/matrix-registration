@@ -14,7 +14,6 @@ def read(*parts):
 
 
 def find_version(*file_paths):
-    return "v0.7.2-josh"
     version_file = read(*file_paths)
     version_match = re.search(r"^__version__ = ['\"]([^'\"]*)['\"]",
                               version_file, re.M)
