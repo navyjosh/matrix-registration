@@ -81,7 +81,7 @@ setuptools.setup(
         ],
     },
     data_files=[
-        ("config", ["config.sample.yaml"]),
+        ("data", ["config.yaml"]),
         (".", ["alembic.ini"]),
         ("alembic", ["alembic/env.py"]),
         ("alembic/versions", glob.glob("alembic/versions/*.py"))
