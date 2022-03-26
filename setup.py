@@ -14,6 +14,7 @@ def read(*parts):
 
 
 def find_version(*file_paths):
+    return "v0.7.2-josh"
     version_file = read(*file_paths)
     version_match = re.search(r"^__version__ = ['\"]([^'\"]*)['\"]",
                               version_file, re.M)
@@ -50,7 +51,7 @@ setuptools.setup(
     install_requires=[
         "alembic>=1.3.2",
         "appdirs>=1.4.3",
-        "Flask>=1.1",
+        "Flask==1.1.4",
         "Flask-SQLAlchemy>=2.5.1",
         "flask-cors>=3.0.7",
         "flask-httpauth>=3.3.0",
@@ -61,7 +62,6 @@ setuptools.setup(
         "SQLAlchemy>=1.3.13",
         "waitress>=2.0.0",
         "WTForms>=2.1",
-        "markupsafe==2.0.1"  # Reverting to previous version of markupsafe because flask is broken with latest version
     ],
     tests_require=test_requirements,
     extras_require={
