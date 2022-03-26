@@ -60,7 +60,8 @@ setuptools.setup(
         "requests>=2.22",
         "SQLAlchemy>=1.3.13",
         "waitress>=2.0.0",
-        "WTForms>=2.1"
+        "WTForms>=2.1",
+        "markupsafe==2.0.1"  # Reverting to previous version of markupsafe because flask is broken with latest version
     ],
     tests_require=test_requirements,
     extras_require={
